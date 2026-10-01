@@ -1,6 +1,10 @@
 {
   "name": "quillm",
-  "owner": { "name": "Streamfog", "email": "kev@limelit.ai" },
+  "description": "Quillm: dashboards, trackers and docs your agents build and keep current.",
+  "owner": {
+    "name": "Streamfog",
+    "email": "kev@limelit.ai"
+  },
   "plugins": [
     {
       "name": "quillm",
