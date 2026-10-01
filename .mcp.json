@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "quillm": {
+      "type": "http",
+      "url": "https://quillm.ai/mcp"
+    }
+  }
+}

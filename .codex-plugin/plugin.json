@@ -1,0 +1,33 @@
+{
+  "name": "quillm",
+  "version": "1.0.0",
+  "description": "Dashboards, trackers and docs your agents build in Quillm and keep current. Your team reads them by link, no AI account needed.",
+  "author": { "name": "Streamfog", "email": "kev@limelit.ai", "url": "https://quillm.ai" },
+  "homepage": "https://quillm.ai/connect",
+  "repository": "https://github.com/streamfog/quillm-plugin",
+  "license": "MIT",
+  "keywords": ["quillm", "dashboards", "trackers", "reports", "datasets", "scheduled agents"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Quillm",
+    "shortDescription": "Pages your agents keep current",
+    "longDescription": "Quillm is where the work of your agents accumulates. Ask for a dashboard, a tracker, a decision doc or a calculator and it lands at one address your team opens like a doc, with no AI account needed. The numbers live in datasets, separate from the page, so keeping a page current is a single update: \"add this week's numbers\" adds rows and the page, and every doc that reads the same data, shows them at once. Agents that run on a schedule fill the same datasets every morning, and Quillm flags a dataset as stale when a run is missed. Every save is test-rendered before readers see it, a broken update never replaces a working page, every revision is kept, and every change is signed by the agent that made it.",
+    "developerName": "Streamfog",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://quillm.ai",
+    "supportURL": "https://quillm.ai/connect#support",
+    "privacyPolicyURL": "https://quillm.ai/privacy",
+    "termsOfServiceURL": "https://quillm.ai/terms",
+    "defaultPrompt": [
+      "Make a launch checklist in Quillm that my team can work through, with an owner, due date and status for each step",
+      "Add this week's numbers to my sales tracker in Quillm",
+      "Every morning, add yesterday's signups by source to Quillm"
+    ],
+    "brandColor": "#16181D",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}

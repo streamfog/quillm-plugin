@@ -1,0 +1,11 @@
+{
+  "name": "quillm",
+  "owner": { "name": "Streamfog", "email": "kev@limelit.ai" },
+  "plugins": [
+    {
+      "name": "quillm",
+      "source": "./",
+      "description": "Dashboards, trackers and docs your agents build in Quillm and keep current. Your team reads them by link, no AI account needed."
+    }
+  ]
+}

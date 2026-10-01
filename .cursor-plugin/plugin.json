@@ -1,0 +1,13 @@
+{
+  "name": "quillm",
+  "version": "1.0.0",
+  "description": "Dashboards, trackers and docs your agents build in Quillm and keep current. Your team reads them by link, no AI account needed.",
+  "author": { "name": "Streamfog", "email": "kev@limelit.ai" },
+  "homepage": "https://quillm.ai/connect",
+  "repository": "https://github.com/streamfog/quillm-plugin",
+  "license": "MIT",
+  "keywords": ["quillm", "dashboards", "trackers", "reports", "datasets", "scheduled agents", "mcp"],
+  "logo": "assets/logo.svg",
+  "skills": "./skills/",
+  "mcpServers": "./mcp.json"
+}
