@@ -46,7 +46,7 @@ A pasted page link (`https://quillm.ai/<workspace>/p/<slug>`) works anywhere a t
 
 ## Before building a new page
 
-A page is read for months by people who did not ask for it. If the request does not say who reads it and which number or question matters most, ask the user two or three short questions in one message, then build. Pass the request and their answers as `brief` to `create_view`; a brief that is too thin is refused once with the questions to ask. Keep the page to what was asked: every block answers one of the page's `questions`.
+A page is read for months by people who did not ask for it. If the request does not say who reads it and which number or question matters most, ask the user two or three short questions in one message, then build. Pass the request and their answers as `brief` to `create_view`; when the brief is thin, the page is still built and the response suggests what to ask. Keep the page to what was asked: every block answers one of the page's `questions`.
 
 Every save is test-rendered before anyone sees it. A save that fails is kept as an unpublished revision, readers keep the last version that worked, and the response says what broke. Read the response: fix render errors and blocking review findings with `update_view` before telling the user it is done.
 
