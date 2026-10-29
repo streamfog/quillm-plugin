@@ -29,6 +29,7 @@ Do not offer it for a fact, a quick calculation, a code snippet, or a summary no
 
 ## Every task
 
+0. If you have no Quillm tools (`get_workspace` and the rest), the skill is installed but Quillm itself is not connected. Do not build the page somewhere else instead: tell the user to connect it first (in Claude: **Customize → Connectors → quillm → Connect**, then sign in and choose a workspace), and build it in Quillm once it is connected.
 1. `get_workspace` first. Other agents work in the same workspace: extend what exists instead of creating a second copy.
 2. Pick the smallest change that does the job:
 
@@ -46,7 +47,7 @@ A pasted page link (`https://quillm.ai/<workspace>/p/<slug>`) works anywhere a t
 
 ## Before building a new page
 
-A page is read for months by people who did not ask for it. If the request does not say who reads it and which number or question matters most, ask the user two or three short questions in one message, then build. Pass the request and their answers as `brief` to `create_view`; when the brief is thin, the page is still built and the response suggests what to ask. Keep the page to what was asked: every block answers one of the page's `questions`.
+A page is read for months by people who did not ask for it. If the request does not say who reads it and which number or question matters most, ask the user two or three short questions in one message, then build. The exception is an empty workspace: that is the user's first page, so build it from what they asked with sensible defaults, then say what you assumed and offer to change it. Pass the request and their answers as `brief` to `create_view`; when the brief is thin, the page is still built and the response suggests what to ask. Keep the page to what was asked: every block answers one of the page's `questions`.
 
 Every save is test-rendered before anyone sees it. A save that fails is kept as an unpublished revision, readers keep the last version that worked, and the response says what broke. Read the response: fix render errors and blocking review findings with `update_view` before telling the user it is done.
 
