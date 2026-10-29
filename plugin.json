@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "quillm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dashboards, trackers and docs your agents build in Quillm and keep current. Your team reads them by link, no AI account needed.",
   "author": { "name": "Streamfog", "email": "kev@limelit.ai", "url": "https://quillm.ai" },
   "homepage": "https://quillm.ai/connect",
